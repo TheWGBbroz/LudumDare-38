@@ -770,26 +770,26 @@ function keyPressed() {
 		return;
 	}
 
-	if(key == 'A') {
+	if(key == 'a') {
 		player.left = true;
-	}else if(key == 'D') {
+	}else if(key == 'd') {
 		player.right = true;
-	}else if(key == ' ' || key == 'W') {
+	}else if(key == ' ' || key == 'w') {
 		player.jump();
-	}else if(key == 'F') {
+	}else if(key == 'f') {
 		player.shoot();
 		player.autofiring = true;
-	}else if(key == 'M') {
+	}else if(key == 'm') {
 		toggleMusic();
 	}
 }
 
 function keyReleased() {
-	if(key == 'A') {
+	if(key == 'a') {
 		player.left = false;
-	}else if(key == 'D') {
+	}else if(key == 'd') {
 		player.right = false;
-	}else if(key == 'F') {
+	}else if(key == 'f') {
 		player.autofiring = false;
 	}
 }
